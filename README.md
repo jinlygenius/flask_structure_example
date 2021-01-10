@@ -4,6 +4,7 @@ When I wanted to start a flask project, I was quite confused how to organize the
  - Put databases to 'databases' module, and initiated a db handler in each file. Registered them ('init_app') in app by importing those db handlers from the module. DB handlers were also imported to models. This structure could prevent an incursive importing.
  - For the same reason, initiated a Marshmallow instance, and registered it in app.
  - Put all routes in the routes file - this was much clearer than writing them directly in app
+ - Logger was configured from log_settings
 
 
 # project
