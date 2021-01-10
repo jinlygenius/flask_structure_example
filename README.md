@@ -1,9 +1,9 @@
 # An example of a flask project
 When I wanted to start a flask project, I was quite confused how to organize the code (comparing to Django's out-of-the-box structure). After some tries, I found
 
- - Put databases to 'databases' module, and initiate a db handler in each file. Do the 'init_app' in app by importing those db handlers from the module. DB handlers are also imported to models. This structure can prevent an incursive importing.
- - For the same reason, initiate a Marshmallow instance, and register it in app.
- - Put all routes in the routes file - this is much clearer than put them directly in app
+ - Put databases to 'databases' module, and initiated a db handler in each file. Registered them ('init_app') in app by importing those db handlers from the module. DB handlers were also imported to models. This structure could prevent an incursive importing.
+ - For the same reason, initiated a Marshmallow instance, and registered it in app.
+ - Put all routes in the routes file - this was much clearer than writing them directly in app
 
 
 # project
